@@ -2,7 +2,7 @@ const Footer=()=>{
     return(
         <>
         <section>
-            <p>Footer</p>
+            <p>footer 1</p>
         </section>
         </>
     )

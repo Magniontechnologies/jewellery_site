@@ -2,7 +2,7 @@ const Home=()=>{
     return(
         <>
         <section id="Home" style={{height:'100vh'}}>
-            <p>Home</p>
+            <p>home</p>
         </section>
         <section id="About" style={{height:'100vh'}}>
             <p>About</p>
