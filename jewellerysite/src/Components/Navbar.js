@@ -1,15 +1,20 @@
 // import { Link } from "react-router-dom";
+import Logo from "../Assets/Logo-Horizontal.png"
+import "./Components.css"
+
 
 const Navbar=()=>{
     return(
         <>
-        <section>
+        <section className="Navbar-Bar">
             <div>
                 {/* LOGO HERE */}
-                <img/>
+                <div className="Logo-Img">
+                    <img src={Logo} alt="Logo"/>
+                </div>
 
             </div>
-            <div>
+            <div className="Navbar-Nav">
                 {/* --- FOR OVER PAGE NAVIGATION --- */}
 
                 {/* <Link to='/'>Home</Link>

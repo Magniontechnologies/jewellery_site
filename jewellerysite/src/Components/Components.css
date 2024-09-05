@@ -1,0 +1,30 @@
+.Navbar-Bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 10vh;
+    background-color:#cf182a;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.Logo-Img img{
+    width:200px;
+}
+.Navbar-Nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Navbar-Nav a{
+    color: black;
+    text-decoration: none;
+    font-family: var(--font1);
+    font-size: 14pt;
+}
+.Navbar-Nav a:hover{
+    color: rgb(255, 187, 0);
+}
