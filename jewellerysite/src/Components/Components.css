@@ -7,8 +7,14 @@
     height: 10vh;
     background-color:#cf182a;
     position: fixed;
-    width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
+}
+.Logo-Img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Logo-Img img{
     width:200px;
