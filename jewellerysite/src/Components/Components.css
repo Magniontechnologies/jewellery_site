@@ -1,36 +1,143 @@
-.Navbar-Bar{
+.Navbar-Bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
     height: 10vh;
-    background-color:#cf182a;
+    background-color: #cf182a;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 }
-.Logo-Img{
+
+.Logo-Img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Logo-Img img{
-    width:200px;
+
+.Logo-Img img {
+    width: 200px;
 }
-.Navbar-Nav{
+
+.Navbar-Nav {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.Navbar-Nav a{
+
+.Navbar-Nav a {
     color: black;
     text-decoration: none;
     font-family: var(--font1);
     font-size: 14pt;
 }
-.Navbar-Nav a:hover{
+
+.Navbar-Nav a:hover {
     color: rgb(255, 187, 0);
+}
+
+/* Footer.css */
+
+.footer {
+    background-color: #2d3e50;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer-Logo1-Img {
+    float: left;
+    margin-left: 15%;
+
+}
+
+.footer-Logo-Img img {
+    display: none;
+}
+
+.footer-Logo1-Img img {
+    width: 200px;
+}
+
+
+.quick-links,
+.social-media {
+    margin-bottom: 10px;
+}
+
+.quick-links a{
+    margin-top: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+    padding-right: 20px;
+}
+.social-media a {
+    margin-top: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+    padding-right: 20px;
+}
+
+.quick-links a:hover,
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.social-media p {
+    margin-bottom: 15px;
+    color: gray;
+}
+
+.disclaimer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 5px;
+    }
+
+    .footer-Logo-Img {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-left: 25%;
+
+    }
+
+    .quick-links,
+    .social-media {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        margin-top: 10px;
+    }
+
+    .quick-links a,
+    .social-media a {
+        margin: 5px 0;
+    }
+
+    .social-media p {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .disclaimer {
+        font-size: 12px;
+    }
 }
