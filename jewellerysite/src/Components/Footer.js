@@ -32,9 +32,9 @@ const Footer = () => {
                 </div>
                 <div className="social-media">
                     <p>Follow us on</p>
-                    <a href='#'> <img src={insta} alt="insta" /> </a>
-                    <a href='#'> <img src={FB} alt="facebook" /> </a>
-                    <a href='#'> <img src={linkedin} alt="linkedin" /> </a>
+                    <a href='www.google.com'> <img src={insta} alt="insta" /> </a>
+                    <a href='www.google.com'> <img src={FB} alt="facebook" /> </a>
+                    <a href='www.google.com'> <img src={linkedin} alt="linkedin" /> </a>
 
 
                 </div>

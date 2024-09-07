@@ -1,6 +1,8 @@
+import "./Styles/Contact.css"
+
 const Contact=()=>{
     return(
-        <section className="contact-section">
+        <section className="contact-section" id="Contact">
         <div className="contact-content">
           <div className="contact-info">
             <h2>Contact Us</h2>
