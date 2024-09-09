@@ -32,15 +32,15 @@
     line-height: 1.5;
   }
   
-  /* Media Query for Tablets and Smaller Devices */
+  /* Media Query for  Smaller Devices */
   @media (max-width: 768px) {
     .services-container {
-      padding: 20px; /* Reduce padding on smaller screens */
+      padding: 20px; 
     }
   
     .service-box {
-      flex: 1 1 100%; /* Each box takes full width on smaller screens */
-      margin: 10px 0; /* Vertical margin for spacing */
+      flex: 1 1 100%; 
+      margin: 10px 0; 
     }
 
     .service-box p {
@@ -56,14 +56,14 @@
       }
   }
   
-  /* Media Query for Mobile Phones */
+ 
   @media (max-width: 480px) {
     .services-container {
-      padding: 10px; /* Further reduce padding on very small screens */
+      padding: 10px; 
     }
   
     .service-box {
-      padding: 15px; /* Reduce padding inside boxes */
+      padding: 15px; 
     }
   }
   

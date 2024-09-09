@@ -232,5 +232,10 @@
     .disclaimer {
         font-size: 12px;
     }
+
+    .footer-Logo1-Img{
+        display: none;
+        height: 0px;
+    }
 }
 

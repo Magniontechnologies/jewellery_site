@@ -56,7 +56,7 @@ const Navbar=()=>{
                     <a href="#Services" onClick={toggleMenu}>Services</a>
                     <a href="#Gallery" onClick={toggleMenu}>Gallery</a>
                     <a href="#Contact" onClick={toggleMenu} className="Nav-Ham-L">Contact</a>
-                    <div className="Nav-Contact">
+                    {/* <div className="Nav-Contact">
                         <p>Contact : </p>
                         <address>
                             19/6, Amirthanijasritham, Andal Street, Sriram Nagar, Kottaiyur, Sivaganga, Karaikudi, PIN 630106<br/><br/>+91 95661 22627<br/>+91 93443 60964
@@ -66,7 +66,7 @@ const Navbar=()=>{
                             <a href='www.google.com'> <img src={FB} alt="facebook" /> </a>
                             <a href='www.google.com'> <img src={linkedin} alt="linkedin" /> </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
