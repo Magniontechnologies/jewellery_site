@@ -13,7 +13,7 @@ const Navbar=()=>{
     const toggleMenu = () => {
         const menu = document.querySelector(".Navbar-Ham-Nav");
         const isMenuOpen = menu.style.transform === 'translateX(0%)';
-        menu.style.transform = isMenuOpen ? 'translateX(-100%)' : 'translateX(0%)';
+        menu.style.transform = isMenuOpen ? 'translateX(100%)' : 'translateX(0%)';
         
         const menuIcon = document.querySelector(".Nav-Ham-But img");
         menuIcon.src = isMenuOpen ? Menu : Cross;
