@@ -1,7 +1,7 @@
 import './Styles/Services.css'
 
 const Services=()=>{
-    return(<>
+    return(<section id="Services">
         <div className="services-container">
       <div className="service-box">
         <h2>Custom Jewelry Creation</h2>
@@ -16,6 +16,6 @@ const Services=()=>{
         <p>We offer professional diamond grading and certification, ensuring the authenticity and quality of every diamond we sell. Our expertise in diamond evaluation guarantees that you receive a gem of impeccable quality.</p>
       </div>
     </div>
-    </>)
+    </section>)
 }
 export default Services;
