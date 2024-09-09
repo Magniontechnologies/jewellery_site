@@ -13,7 +13,7 @@
     padding-left: 20px;
     padding-right: 20px;
     height: 10vh;
-    background-color: #cf182a;
+    background-color: #2d3e50;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,7 +38,7 @@
 }
 
 .Navbar-Nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-family: var(--font1);
     font-size: 14pt;
