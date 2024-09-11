@@ -16,45 +16,55 @@ const Gallery=()=>{
                     <div className="Gallery-Col">
                         <div className="Gallery-Img">
                             <img src={G1} alt="Jewellery"/>
+                            <p>This Is Infromation From US Gov That The Gold Rate Was Been Incressing More Than Previous Year.</p>
                         </div>
                         <div className="Gallery-Img">
                             <img src={G2} alt="Jewellery"/>
+                            <p>This Is Infromation From US Gov That The Gold Rate Was Been Incressing More Than Previous Year.</p>
                         </div>
                     </div>
                     
                     <div className="Gallery-Col">
                         <div className="Gallery-Img">
                             <img src={G3} alt="Jewellery"/>
+                            <p>This Is Infromation From US Gov That The Gold Rate Was Been Incressing More Than Previous Year.</p>
                         </div>
                         <div className="Gallery-Img">
                             <img src={G4} alt="Jewellery"/>
+                            <p>This Is Infromation From US Gov That The Gold Rate Was Been Incressing More Than Previous Year.</p>
                         </div>
                     </div>
 
                     <div className="Gallery-Col">
                         <div className="Gallery-Img">
                             <img src={G2} alt="Jewellery"/>
+                            <p>This Is Infromation From US Gov That The Gold Rate Was Been Incressing More Than Previous Year.</p>
                         </div>
                         <div className="Gallery-Img">
                             <img src={G3} alt="Jewellery"/>
+                            <p>This Is Infromation From US Gov That The Gold Rate Was Been Incressing More Than Previous Year.</p>
                         </div>
                     </div>
 
                     <div className="Gallery-Col">
                         <div className="Gallery-Img">
                             <img src={G1} alt="Jewellery"/>
+                            <p>This Is Infromation From US Gov That The Gold Rate Was Been Incressing More Than Previous Year.</p>
                         </div>
                         <div className="Gallery-Img">
                             <img src={G3} alt="Jewellery"/>
+                            <p>This Is Infromation From US Gov That The Gold Rate Was Been Incressing More Than Previous Year.</p>
                         </div>
                     </div>
 
                     <div className="Gallery-Col">
                         <div className="Gallery-Img">
                             <img src={G4} alt="Jewellery"/>
+                            <p>This Is Infromation From US Gov That The Gold Rate Was Been Incressing More Than Previous Year.</p>
                         </div>
                         <div className="Gallery-Img">
                             <img src={G2} alt="Jewellery"/>
+                            <p>This Is Infromation From US Gov That The Gold Rate Was Been Incressing More Than Previous Year.</p>
                         </div>
                     </div>
                 </div>
