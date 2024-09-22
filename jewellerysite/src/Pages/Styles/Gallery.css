@@ -3,9 +3,9 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 10vh 0;
+    padding:20px 0;
     flex-direction: column;
-    height: 100vh;
+    overflow: hidden;
 }
 
 .Gallery-Title p {
@@ -14,10 +14,10 @@
 
 .Gallery-Cont {
     width: 100%;
-    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px
 }
 
 .Gallery-Img img {
@@ -32,6 +32,11 @@
 .Gallery-Img {
     transition: all 0.4s ease-in-out;
     position: relative;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.301);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Gallery-Img:hover {
@@ -45,6 +50,7 @@
     left: 20px;
     right: 20px;
     bottom: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -65,19 +71,26 @@
 .GalleryPage {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-gap: 20px; /* spacing between the items */
-    width: 80%;
+    grid-gap: 50px; /* spacing between the items */
     justify-content: center;
     align-items: center;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
 }
 
+.GalleryPages.exiting .GalleryPage {
+    opacity: 0; /* Fading out */
+}
+
+.GalleryPages.entering .GalleryPage {
+    opacity: 1; /* Fading in */
+}
 .GalleryPages {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 80vh;
+    height: 750px;
 }
 
 .Gallery-PageButtons {
@@ -92,4 +105,10 @@
 .Gallery-PageButtons button.active {
     background-color: #555;
     color: white;
+}
+
+@media (max-width:1400px) {
+    .GalleryPage{
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
 }

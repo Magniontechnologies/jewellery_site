@@ -1,12 +1,16 @@
+import { useEffect, useState } from 'react';
 import "./Styles/Gallery.css";
 import G1 from "../Assets/Gallery/Jewellery1.jpg";
 import G2 from "../Assets/Gallery/Jewellery2.jpg";
 import G3 from "../Assets/Gallery/Jewellery3.jpg";
 import G4 from "../Assets/Gallery/Jewellery4.jpg";
-import { useState } from 'react';
 
 const Gallery = () => {
     const [currentPage, setCurrentPage] = useState(1);
+    const [isTransitioning, setIsTransitioning] = useState(false); // For controlling transition
+
+    let DWid=window.innerWidth;
+    console.log(DWid)
 
     const imageData = [
         { img: G1, text: "Gold rates have been increasing significantly this year." },
@@ -23,30 +27,40 @@ const Gallery = () => {
         { img: G4, text: "Historical data shows a steady rise in gold prices." }
     ];
 
-    const itemsPerPage = 8; // Number of images per page
+    const [itemsPerPage,setIP] = useState(8); // Number of images per page
+    useEffect(()=>{
+        if(DWid<1400){
+            setIP(6)
+        }
+    },[DWid])
+    
     const totalPages = Math.ceil(imageData.length / itemsPerPage);
 
     const handlePageChange = (page) => {
-        setCurrentPage(page);
+        setIsTransitioning(true); // Start transition
+        setTimeout(() => {
+            setCurrentPage(page); // Change page after transition
+            setIsTransitioning(false); // End transition
+        }, 500); // Match the CSS transition duration
     };
 
     const startIndex = (currentPage - 1) * itemsPerPage;
     const paginatedData = imageData.slice(startIndex, startIndex + itemsPerPage);
 
     return (
-        <section id="Gallery" style={{ height: '90vh' }}>
+        <section id="Gallery">
             <div className="Gallery-Title">
                 <p>| Gallery</p>
             </div>
             <div className="Gallery-Cont">
-                <div className="GalleryPages">
+                <div className={`GalleryPages ${isTransitioning ? 'exiting' : 'entering'}`}>
                     <div className="GalleryPage">
-                            {paginatedData.map((data, index) => (
-                                <div className="Gallery-Img" key={index}>
-                                    <img src={data.img} alt="Jewellery" />
-                                    <p>{data.text}</p>
-                                </div>
-                            ))}
+                        {paginatedData.map((data, index) => (
+                            <div className="Gallery-Img" key={index}>
+                                <img src={data.img} alt="Jewellery" />
+                                <p>{data.text}</p>
+                            </div>
+                        ))}
                     </div>
                     <div className="Gallery-PageButtons">
                         {[...Array(totalPages)].map((_, pageIndex) => (
