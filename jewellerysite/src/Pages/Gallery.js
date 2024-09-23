@@ -29,8 +29,11 @@ const Gallery = () => {
 
     const [itemsPerPage,setIP] = useState(8); // Number of images per page
     useEffect(()=>{
-        if(DWid<1400){
+        if(DWid<790){
             setIP(6)
+        }
+        if(DWid<476){
+            setIP(4)
         }
     },[DWid])
     
