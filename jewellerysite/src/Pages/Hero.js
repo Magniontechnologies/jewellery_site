@@ -1,12 +1,14 @@
-// import img1 from '../Assets/hero.jpg'
+import HeroImg from '../Assets/Hero.jpg'
+import './Styles/Hero.css'
+
 const Hero=()=>{
     return(<>
-        <section id="Home" style={{height:'90vh',paddingTop:'10vh'}}>
-        {/* <div className="hero-Img">
+        <section id="Home" style={{paddingTop:'10vh'}}>
+        <div className="hero-Img">
 
-        <img src={img1} alt="img1" />
+            <img src={HeroImg} alt="Hero" />
 
-        </div> */}
+        </div>
         </section>
     </>)
 }
