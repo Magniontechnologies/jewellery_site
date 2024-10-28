@@ -21,12 +21,12 @@ const Contact=()=>{
                 +91 95661 22627, +91 93443 60964
               </p>
             </div>
-            <a href="mailto:info@example.com" className="cta-button">Get in Touch</a>
+            <a href="mailto:info@amirthaasrijewellers.in" className="cta-button">Get in Touch</a>
           </div>
           <div className="map-container">
             <iframe
               title="Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.083412993694!2d78.65800901461085!3d8.88843359150657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b040acb00000001%3A0x4976ae4c9f048c3e!2sSivaganga%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1658318270436!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.0213468541347!2d78.7986834!3d10.0973364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0067a41e4a3101%3A0xc5335d6746d94b33!2sAmirthanijasritham!5e0!3m2!1sen!2sin!4v1730093675119!5m2!1sen!2sin"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
