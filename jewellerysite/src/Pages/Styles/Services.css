@@ -15,8 +15,8 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
-  position: relative; /* For positioning the image */
-  overflow: hidden; /* Ensure the image doesn't overflow */
+  position: relative; 
+  overflow: hidden; 
 }
 
 .service-box:hover {
@@ -27,11 +27,11 @@
 .service-image {
   width: 100%;
   height: auto;
-  transition: transform 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease; 
 }
 
 .service-box:hover .service-image {
-  transform: scale(1.1); /* Scale image on hover */
+  transform: scale(1.1); 
 }
 
 .service-box h2 {
@@ -44,7 +44,7 @@
   line-height: 1.5;
 }
 
-/* Media Query for Smaller Devices */
+/* Media Query Smaller Devices */
 @media (max-width: 768px) {
   .services-container {
     padding: 20px;
